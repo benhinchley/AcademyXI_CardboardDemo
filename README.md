@@ -30,7 +30,7 @@ _NOTE: The [Google VR SDK for Unity] is bundled into this demo project. So it is
 * To get your application running on an [iOS] device you will need an AppleID. Any AppleID will work, but it is recommend that you sign up for a free developer account as well.
 	* To sign up for an AppleID go to this [page](https://appleid.apple.com/account#!&page=create).
 	* Once you have your AppleID, go to the [Apple Developer Centre], click on the `Account` tab at the top of the page, and log in with your AppleID, and follow the steps to create a developer account.
-* Download the latest version of [Xcode] from the AppStore.
+* Download the latest version of [Xcode][Xcode Download] from the AppStore.
 * Finally you will need to add your AppleID to Xcode. [Unity] have a good write on how to do this [here](https://docs.unity3d.com/Manual/iphone-accountsetup.html).
 
 ## Getting Started
@@ -45,12 +45,30 @@ There a couple of settings you will need to set, for both [Android] and [iOS].
 
 ### Building for [Android]
 <!-- TODO: write up steps on how to build a project for Android. -->
+1. You will need to enable developer mode on your [Android] device.
+	* Go to `Settings` > `About Phone`, and then scroll down to `Build number`.
+	You need to tap `Build number` seven (7) times. After that developer mode will be enabled.
+2. You also need to enable `USB debugging`.
+	* Go to the new `Developer options` section, and scroll down until you see the `USB debugging` toggle,
+	switch this to on.
+3. Plug in your [Android] device.
+4. Click build and run.
 
 ### Building for [iOS]
 <!-- TODO: write up steps on how to build a project for iOS. -->
+1. Make sure [Xcode] is closed. _(idk why, but I had a few troubles if xcode was open)_
+2. Plug in [iOS] device.
+3. Click build and run
 
 ## Next Steps
 <!-- TODO: write up next steps section, with links to some good resources etc. -->
+
+## Links and resources
+* [Google VR SDK for Unity]
+* [Google Cardboard]
+* [Android Studio]
+* [Xcode]
+* [Unity]
 
 ## License
 This project is licensed under [MIT](LICENSE).
@@ -62,7 +80,8 @@ This project is licensed under [MIT](LICENSE).
 [Google VR SDK for Unity]: https://developers.google.com/vr/unity/download "Google VR SDK for Unity"
 
 [Android Studio]: https://developer.android.com/studio/index.html#mac-bundle "Android Studio for macOS"
-[Xcode]: https://itunes.apple.com/au/app/xcode/id497799835?mt=12 "Xcode"
+[Xcode]: https://developer.apple.com/xcode/
+[Xcode Download]: https://itunes.apple.com/au/app/xcode/id497799835?mt=12 "Xcode Download"
 
 [Apple Developer Centre]: https://developer.apple.com/ "Apple Developer Centre"
 
