@@ -24,9 +24,17 @@ public class GazeInteraction : MonoBehaviour, IGvrGazeResponder {
 	}
 
 	public void GazeTriggerAction() {
-		Debug.Log("Gaze Trigger");
+		teleportRandomly();
 	}
 
+	void teleportRandomly() {
+    Vector3 direction = Random.onUnitSphere;
+    direction.y = Mathf.Clamp(direction.y, 0.5f, 1f);
+    float distance = 2 * Random.value + 1.5f;
+    transform.localPosition = direction * distance;
+  }
+
+	// This is where we implement the IGvrGazeResponder class (interface).
 	#region IGvrGazeResponder implementation
 
     /// Called when the user is looking on a GameObject with this script,
