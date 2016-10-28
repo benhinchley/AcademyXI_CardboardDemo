@@ -2,7 +2,7 @@
 > a basic unity project for building [Google Cardboard] applications for [Android] and [iOS].
 
 ## Overview
-TODO: Write up overview of the project and what it contains.
+<!-- TODO: Write up overview of the project and what it contains. -->
 
 ## Pre-Requisites
 There are a few things you will need installed on your computer to make this work.
@@ -36,16 +36,21 @@ _NOTE: The [Google VR SDK for Unity] is bundled into this demo project. So it is
 ## Getting Started
 To get started using this project download the latest version from [here][Project Latest]. 
 
-TODO: Write up the basic getting started guide for this project.
+<!-- TODO: Write up the basic getting started guide for this project. -->
 
-## Building for [Android]
-TODO: write up steps on how to build a project for Android.
+## Building your project
+There a couple of settings you will need to set, for both [Android] and [iOS].
+1. In `PlayerSettings`, click **Resolution and Presentation** to expand that panel. Set the **Default Orientation** to `Auto Rotation`, and then uncheck all of the **Allowed Orientations** for `Auto Rotation` except for `Landscape Left`.
+2. Click **Other Settings** to expand that panel and find the `Bundle Identifier` field. Enter a valid package name for your application _(such as com.mycompany.cardboarddemo)_ that follows the naming rules for Java packages and/or .Net namespaces. Typically this is of the form: com.<yourcompany>.<appname>
 
-## Building for [iOS]
-TODO: write up steps on how to build a project for iOS.
+### Building for [Android]
+<!-- TODO: write up steps on how to build a project for Android. -->
+
+### Building for [iOS]
+<!-- TODO: write up steps on how to build a project for iOS. -->
 
 ## Next Steps
-TODO: write up next steps section, with links to some good resources etc.
+<!-- TODO: write up next steps section, with links to some good resources etc. -->
 
 ## License
 This project is licensed under [MIT](LICENSE).
