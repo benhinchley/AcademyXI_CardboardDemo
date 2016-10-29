@@ -14,8 +14,9 @@ There are a few things you will need installed on your computer to make this wor
 _NOTE: The [Google VR SDK for Unity] is bundled into this demo project. So it is not necessary to complete this step, but I am including it here for future reference._
 
 ### Pre-Requisites for [Android]
-1. You will need to install the Android SDK, the simplest way to get this is to install [Android Studio].
-2. After installing Android Studio, you will need to update the Android SDK Tools and install an Android platform. You will need to install/update the following:
+1. Install [Java](https://www.java.com/en/download/mac_download.jsp)
+2. Install the Android SDK, the simplest way to get this is to install [Android Studio].
+3. After installing Android Studio, you will need to update the Android SDK Tools and install an Android platform. You will need to install/update the following:
   * Android SDK Build Tools
   * Android SDK Platform-tools
   * Android SDK Tools
