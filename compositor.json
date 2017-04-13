@@ -1,0 +1,90 @@
+{
+  "name": "benhinchley/AcademyXI_CardboardDemo",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "master",
+  "style": {
+    "name": "Brutalist",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BasicHeader",
+      "article": "article/MarkdownArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+    "heading": {},
+    "typeScale": [
+      48,
+      32,
+      20,
+      18,
+      16,
+      14,
+      12
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "fluid": true
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/benhinchley/AcademyXI_CardboardDemo",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "AcademyXI_CardboardDemo",
+      "subhead": "A demo unity project for building google cardboard app's for Android and iOS",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "AcademyXI_CardboardDemo: A demo unity project for building google cardboard app's for Android and iOS",
+          "url": ""
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "benhinchley",
+          "repo": "AcademyXI_CardboardDemo"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>AcademyXI Cardboard Demo - Android &amp; iOS</h1>\n<blockquote>\n<p>a basic unity project for building <a href=\"https://vr.google.com/cardboard/\">Google Cardboard</a> applications for <a href=\"https://www.android.com/\">Android</a> and <a href=\"http://www.apple.com/ios/\">iOS</a>.</p>\n</blockquote>\n<h2>Overview</h2>\n\n<h2>Pre-Requisites</h2>\n<p>There are a few things you will need installed on your computer to make this work.</p>\n<ul>\n<li>For <a href=\"https://www.android.com/\">Android</a> and <a href=\"http://www.apple.com/ios/\">iOS</a> you will need <a href=\"https://unity3d.com/\">Unity</a> installed. To get <a href=\"https://unity3d.com/\">Unity</a> go to their <a href=\"https://store.unity.com/download?ref=personal\">download page</a> and download the installer.<ul>\n<li>When installing <a href=\"https://unity3d.com/\">Unity</a> make sure to select <code>Android Build Support</code> and <code>iOS Build Support</code> when you are asked to choose the components you want installed.</li>\n<li>If you already have installed <a href=\"https://unity3d.com/\">Unity</a> you can get the <code>iOS Build Support</code> component from <a href=\"http://download.unity3d.com/download_unity/649f48bbbf0f/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-5.4.1f1.pkg\">here</a> and the <code>Android Build Support</code> component from <a href=\"http://download.unity3d.com/download_unity/649f48bbbf0f/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-5.4.1f1.pkg\">here</a>.</li>\n</ul>\n</li>\n<li>You will also need the <a href=\"https://developers.google.com/vr/unity/download\">Google VR SDK for Unity</a>. The simplest way to get this is to just download the zip file directly from <a href=\"https://github.com/googlevr/gvr-unity-sdk/archive/master.zip\">here</a>, the other option is to clone the repository using <a href=\"https://git-scm.com/\">git</a> =&gt; <code>git clone https://github.com/googlevr/gvr-unity-sdk.git</code></li>\n</ul>\n<p><em>NOTE: The <a href=\"https://developers.google.com/vr/unity/download\">Google VR SDK for Unity</a> is bundled into this demo project. So it is not necessary to complete this step, but I am including it here for future reference.</em></p>\n<h3>Pre-Requisites for <a href=\"https://www.android.com/\">Android</a></h3>\n<ol>\n<li>Install <a href=\"https://www.java.com/en/download/mac_download.jsp\">Java</a></li>\n<li>Install the Android SDK, the simplest way to get this is to install <a href=\"https://developer.android.com/studio/index.html#mac-bundle\">Android Studio</a>.</li>\n<li><p>After installing Android Studio, you will need to update the Android SDK Tools and install an Android platform. You will need to install/update the following:</p>\n<ul>\n<li>Android SDK Build Tools</li>\n<li>Android SDK Platform-tools</li>\n<li>Android SDK Tools</li>\n<li>Android SDK Platform<ul>\n<li>ARM System Images</li>\n</ul>\n</li>\n</ul>\n<p>For a more detailed explanation on what is needed go <a href=\"https://developer.android.com/studio/intro/update.html#sdk-manager\">here</a>.</p>\n</li>\n</ol>\n<h3>Pre-Requisites for <a href=\"http://www.apple.com/ios/\">iOS</a></h3>\n<blockquote>\n<p><em>NOTE: The only way to build an application for <a href=\"http://www.apple.com/ios/\">iOS</a> is on an Apple Computer.</em></p>\n</blockquote>\n<ul>\n<li>To get your application running on an <a href=\"http://www.apple.com/ios/\">iOS</a> device you will need an AppleID. Any AppleID will work, but it is recommend that you sign up for a free developer account as well.<ul>\n<li>To sign up for an AppleID go to this <a href=\"https://appleid.apple.com/account#!&amp;page=create\">page</a>.</li>\n<li>Once you have your AppleID, go to the <a href=\"https://developer.apple.com/\">Apple Developer Centre</a>, click on the <code>Account</code> tab at the top of the page, and log in with your AppleID, and follow the steps to create a developer account.</li>\n</ul>\n</li>\n<li>Download the latest version of <a href=\"https://itunes.apple.com/au/app/xcode/id497799835?mt=12\">Xcode</a> from the AppStore.</li>\n<li>Finally you will need to add your AppleID to Xcode. <a href=\"https://unity3d.com/\">Unity</a> have a good write on how to do this <a href=\"https://docs.unity3d.com/Manual/iphone-accountsetup.html\">here</a>.</li>\n</ul>\n<h2>Getting Started</h2>\n<p>To get started using this project download the latest version from <a href=\"https://github.com/benhinchley/AcademyXI_CardboardDemo_Android/archive/master.zip\">here</a>. </p>\n\n<h2>Building your project</h2>\n<p>There a couple of settings you will need to set, for both <a href=\"https://www.android.com/\">Android</a> and <a href=\"http://www.apple.com/ios/\">iOS</a>.</p>\n<ol>\n<li>In <code>PlayerSettings</code>, click <strong>Resolution and Presentation</strong> to expand that panel. Set the <strong>Default Orientation</strong> to <code>Auto Rotation</code>, and then uncheck all of the <strong>Allowed Orientations</strong> for <code>Auto Rotation</code> except for <code>Landscape Left</code>.</li>\n<li>Click <strong>Other Settings</strong> to expand that panel and find the <code>Bundle Identifier</code> field. Enter a valid package name for your application <em>(such as com.mycompany.cardboarddemo)</em> that follows the naming rules for Java packages and/or .Net namespaces. Typically this is of the form: com..</li>\n</ol>\n<h3>Building for <a href=\"https://www.android.com/\">Android</a></h3>\n\n<ol>\n<li>You will need to enable developer mode on your <a href=\"https://www.android.com/\">Android</a> device.<ul>\n<li>Go to <code>Settings</code> &gt; <code>About Phone</code>, and then scroll down to <code>Build number</code>.\nYou need to tap <code>Build number</code> seven (7) times. After that developer mode will be enabled.</li>\n</ul>\n</li>\n<li>You also need to enable <code>USB debugging</code>.<ul>\n<li>Go to the new <code>Developer options</code> section, and scroll down until you see the <code>USB debugging</code> toggle,\nswitch this to on.</li>\n</ul>\n</li>\n<li>Plug in your <a href=\"https://www.android.com/\">Android</a> device.</li>\n<li>Click build and run.</li>\n</ol>\n<h3>Building for <a href=\"http://www.apple.com/ios/\">iOS</a></h3>\n\n<ol>\n<li>Make sure <a href=\"https://developer.apple.com/xcode/\">Xcode</a> is closed. <em>(idk why, but I had a few troubles if xcode was open)</em></li>\n<li>Plug in <a href=\"http://www.apple.com/ios/\">iOS</a> device.</li>\n<li>Click build and run</li>\n</ol>\n<h2>Next Steps</h2>\n\n<h2>Links and resources</h2>\n<ul>\n<li><a href=\"https://developers.google.com/vr/unity/download\">Google VR SDK for Unity</a></li>\n<li><a href=\"https://vr.google.com/cardboard/\">Google Cardboard</a></li>\n<li><a href=\"https://developer.android.com/studio/index.html#mac-bundle\">Android Studio</a></li>\n<li><a href=\"https://developer.apple.com/xcode/\">Xcode</a></li>\n<li><a href=\"https://unity3d.com/\">Unity</a></li>\n</ul>\n<h2>License</h2>\n<p>This project is licensed under <a href=\"LICENSE\">MIT</a>.</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/benhinchley/AcademyXI_CardboardDemo",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/benhinchley",
+          "text": "benhinchley"
+        }
+      ]
+    }
+  ]
+}
